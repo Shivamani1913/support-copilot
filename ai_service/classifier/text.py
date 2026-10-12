@@ -1,4 +1,4 @@
-import re
+from classifier.text import clean
 
 
 def clean(text: str) -> str:

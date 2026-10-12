@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from classifier.predict import predict_category
 from .schemas import ClassificationRequest, ClassificationResponse
-
+from classifier.predict import predict_category
+predict_category("warm up", "model", backend="embed")  # load the model at startup, not on the first request
 CONFIDENCE_THRESHOLD = 0.40 #provesional; we'll tune it on a real test set
 app=FastAPI(title="Support Copilot Ai Services")
 @app.get("/health")
@@ -11,6 +12,7 @@ def health():
 @app.post("/classify", response_model=ClassificationResponse)
 def classify(req:ClassificationRequest):
     #Placeholder for actual classification logic, the trained scikit-learn model replaces this later
+    category, confidence = predict_category(req.subject, req.body, backend="embed")
     category, confidence = predict_category(req.subject, req.body)
     return ClassificationResponse(
         category=category,
