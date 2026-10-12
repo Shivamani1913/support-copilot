@@ -6,4 +6,5 @@ class ClassificationRequest(BaseModel):
 class ClassificationResponse(BaseModel):
     category:str
     priority:str
+    needs_review: bool=False
     confidence:float=Field(ge=0.0, le=1.0)
