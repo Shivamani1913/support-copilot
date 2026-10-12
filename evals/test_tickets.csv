@@ -1,0 +1,26 @@
+subject,body,expected
+Where is my stuff,tracking has not updated in 6 days,ORDER
+Double charge,i was billed two times for one order,PAYMENT
+Cant sign in,password reset mail never arrives,ACCOUNT
+Slow checkout,love the app but paying takes forever,FEEDBACK
+Return help,ordered a medium and need to send it back,REFUND
+Need a human,wanna talk to someone on the phone,CONTACT
+Wrong address,need to change where my parcel goes,SHIPPING
+Delivery time,how many days will delivery take to my city,DELIVERY
+Invoice please,need a copy of my bill for last month,INVOICE
+Cancel fee,will i be charged if i cancel my order,CANCEL
+Newsletter,how do i sign up for your emails,SUBSCRIPTION
+Card declined,my card keeps getting rejected at checkout,PAYMENT
+Delete account,i want my account removed,ACCOUNT
+Refund status,still no money back after 10 days,REFUND
+Change order,i added the wrong item can i swap it,ORDER
+Complaint,the support person was rude to me,FEEDBACK
+Delivery options,do you offer same day delivery,DELIVERY
+New address,i moved and need to set up a new shipping address,SHIPPING
+Talk to agent,this chatbot is useless get me a person,CONTACT
+Bill needed,where can i download my invoice,INVOICE
+Cant register,signup page gives an error,ACCOUNT
+Order cancel,please cancel the order i just placed,ORDER
+Payment methods,can i pay with paypal,PAYMENT
+Review,want to leave a review for my last purchase,FEEDBACK
+Cancellation fee,is there a fee for cancelling,CANCEL
